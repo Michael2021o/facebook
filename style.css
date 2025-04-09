@@ -512,6 +512,8 @@ img {
 
 .thumbs--icon {
   background-color: #0866ff;
+  z-index: 1;
+  border: 1px solid #f2f2f2;
 }
 
 .love--icon {
@@ -681,6 +683,39 @@ img {
   top: -176%;
 }
 
+.reel-create {
+  color: #0866ff;
+  font-weight: 700;
+  font-family: 3rem;
+}
+
+.main-post-reel-img img {
+  height: 3rem;
+  width: 3rem;
+}
+
+.reel-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 0.5fr;
+  gap: 0.8rem;
+  min-height: 20rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+}
+
+.reel-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2rem;
+}
+
+video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 2rem;
+}
 /* ****** Left side  ****** */
 
 .left-side {
