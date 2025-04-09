@@ -34,7 +34,7 @@ img {
   position: fixed;
   width: 100%;
   top: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
   z-index: 3;
   background-color: #fff;
 }
@@ -94,6 +94,30 @@ img {
   left: 0;
   bottom: -2rem;
 }
+
+.home {
+  position: relative;
+}
+
+/* .home .home-tooltip {
+  visibility: hidden;
+  font-size: 1.2rem;
+  background-color: #494a4b;
+  color: #fff;
+  text-align: center;
+  padding: 0.8rem 1.6rem;
+  border-radius: 0.6rem;
+  position: absolute;
+  bottom: -12%;
+  left: 0;
+  z-index: 5;
+  transform: translate(-25%, 166%);
+}
+
+.home .home-tooltip:hover {
+  cursor: pointer;
+  visibility: visible;
+} */
 
 .profile-nav {
   font-size: 2.2rem;
@@ -401,6 +425,7 @@ img {
   display: flex;
   flex-direction: column;
   gap: 0.3rem;
+  font-weight: 500;
 }
 
 .profile-name a {
@@ -416,15 +441,19 @@ img {
 
 .main-post-icons {
   display: flex;
+  align-items: center;
+  gap: 2rem;
 }
 .dots {
-  height: 4rem;
-  width: 4rem;
+  height: 2.4rem;
+  width: 2.4rem;
 }
 
 .cross-img {
-  height: 4rem;
-  width: 4rem;
+  height: 2.4rem;
+  width: 2.4rem;
+  filter: brightness(0) saturate(100%) invert(50%) sepia(6%) saturate(324%)
+    hue-rotate(182deg) brightness(101%) contrast(88%);
 }
 
 .main-post-img {
@@ -445,14 +474,14 @@ img {
   position: relative;
 }
 
-.main-post-coment-icons::after {
+/* .main-post-coment-icons::after {
   width: 94%;
   height: 1px;
   background-color: #80838738;
   position: absolute;
   bottom: 0;
   content: "";
-}
+} */
 
 .thumbs {
   display: flex;
@@ -489,6 +518,8 @@ img {
   justify-content: space-between;
   align-items: center;
   gap: 4rem;
+  filter: brightness(0) saturate(100%) invert(54%) sepia(4%) saturate(518%)
+    hue-rotate(182deg) brightness(95%) contrast(92%);
 }
 
 .comments-flex {
@@ -507,6 +538,8 @@ img {
   display: flex;
   justify-content: space-between;
   padding: 1rem 8rem;
+  filter: brightness(0) saturate(100%) invert(50%) sepia(6%) saturate(324%)
+    hue-rotate(182deg) brightness(101%) contrast(88%);
 }
 
 .reaction-buttons {
@@ -518,6 +551,41 @@ img {
 .reaction-buttons img {
   height: 2rem;
   width: 2rem;
+}
+
+.comments-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 3rem;
+}
+
+.view-commets {
+  color: #808387;
+  font-weight: 600;
+}
+
+.comment-profile {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.comment-profile-img {
+  height: 3.8rem;
+  width: 3.8rem;
+  border-radius: 50%;
+  border: 3px solid #0866ff;
+}
+
+.comment-box {
+  background-color: #8f8f8f12;
+  padding: 1.2rem;
+  border-radius: 1rem;
+}
+
+.underline-comment {
+  margin-top: -3rem;
 }
 
 /* ****** Left side  ****** */
@@ -634,7 +702,12 @@ img {
 .underline {
   width: 100%;
   height: 1px;
-  background-color: #80838738;
+  background-color: #87878724;
+}
+
+.underline-top {
+  width: 91.5%;
+  margin: 0 auto;
 }
 
 .birthdat-text {
