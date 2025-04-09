@@ -590,7 +590,7 @@ img {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.2rem;
   margin-top: 4.5rem;
 }
 
@@ -604,6 +604,19 @@ img {
   font-weight: 700;
   color: #555;
   letter-spacing: 0.5px;
+}
+
+.privacy-text {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #65686c;
+  margin-top: 4rem;
+  margin-bottom: 0.5rem;
+}
+.privacy-more {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #65686c;
 }
 
 /* Right-side */
