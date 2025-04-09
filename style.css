@@ -349,6 +349,10 @@ img {
 
 /* Main post */
 
+.main {
+  grid-column: 2 / 3;
+}
+
 .main-post-card {
   display: flex;
   flex-direction: column;
@@ -519,8 +523,8 @@ img {
 /* ****** Left side  ****** */
 
 .left-side {
-  position: sticky;
-  top: 0;
+  height: 100%;
+  position: fixed;
 }
 
 .side-link-list {
